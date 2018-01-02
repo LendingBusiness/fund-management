@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.kd</groupId>
-    <artifactId>LendingBusiness</artifactId>
+    <artifactId>fund-management</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
@@ -23,6 +23,11 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>org.kd</id>
+            <name>kd</name>
+            <url>file:C:/Users/KDRZAZGA/.m2/repository</url>
+        </repository>
     </repositories>
 
     <parent>
@@ -37,23 +42,21 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+            <version>1.5.3.RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>2.13.0</version>
-            <scope>test</scope>
+            <groupId>org.kd</groupId>
+            <artifactId>common-lending-lib</artifactId>
+            <version>0.0.3-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.github.jsqlparser</groupId>
-            <artifactId>jsqlparser</artifactId>
-            <version>1.1</version>
+            <groupId>org.kd</groupId>
+            <artifactId>math2</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
-
     </dependencies>
 
 </project>
